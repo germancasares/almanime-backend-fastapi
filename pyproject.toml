@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["German Casares <german.casares@outlook.com>"]
+repository = ""
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.68.0"
+uvicorn = "^0.15.0"
+SQLAlchemy = "^1.4.23"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+psycopg2 = "^2.9.1"
+alembic = "^1.6.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "scripts:start"
+test = "scripts:test"
+lint = "scripts:lint"
