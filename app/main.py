@@ -6,7 +6,6 @@ from sqlalchemy.orm import Session
 
 from .repositories.anime import get_anime
 from .repositories.database import SessionLocal
-from .repositories.entities.anime import Anime
 
 app = FastAPI()
 

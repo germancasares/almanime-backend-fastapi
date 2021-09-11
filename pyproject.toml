@@ -15,12 +15,16 @@ SQLAlchemy = "^1.4.23"
 pytest = "^5.2"
 psycopg2 = "^2.9.1"
 alembic = "^1.6.5"
+PyInquirer = "^1.0.3"
+requests = "^2.26.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-start = "scripts:start"
-test = "scripts:test"
-lint = "scripts:lint"
+start = "scripts.project:start"
+test = "scripts.project:test"
+lint = "scripts.project:lint"
+almcli = "scripts.almcli:main"
+update_animes = "scripts.commands.update_animes:run"
